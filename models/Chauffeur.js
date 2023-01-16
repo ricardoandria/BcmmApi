@@ -20,6 +20,17 @@ const ChauffeurSchema = new mongoose.Schema(
             required:true,
             unique:true
         },
+        cin: {
+            type:String,
+            unique:true
+        },
+        numeroPermis: {
+            type:String,
+            unique:true
+        },
+        dateDelivrance: {
+            type:Date,
+        }
 
     },{
         timestamps: true
