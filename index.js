@@ -9,6 +9,7 @@ import chauffeurRoute from "./routes/Chauffeur.js";
 import voyageRoute from "./routes/Voyage.js";
 import entretienRoute from "./routes/Entretien.js";
 import papierRoute from "./routes/Papier.js";
+import UserRoute from "./routes/User.js";
 
 
 const app = express();
@@ -37,6 +38,7 @@ app.use("/chauffeur/",chauffeurRoute);
 app.use("/voyage/",voyageRoute);
 app.use("/entretien/",entretienRoute);
 app.use("/papier/",papierRoute);
+app.use("/user/",UserRoute);
 
 
 app.use((err, req, res, next) => {
